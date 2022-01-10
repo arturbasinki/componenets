@@ -3,11 +3,7 @@
     <div class="line"></div>
     <div class="line"></div>
   </div>
-  <div *ngFor="(let line=0; line<lines;line++)" class="paragraph">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
+  <div class="paragraph">
+    <div *appTimes="lines" class="line"></div>
   </div>
 </div>
