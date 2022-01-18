@@ -23,6 +23,8 @@ export class ModalComponent implements OnInit {
   }
   ngOnDestroy(): void {
     // console.log(`LEAVING MODAL!!`);
+    // this lifecyckle hook is activated when you leave this component,
+    // this mean, you navigate somewhere else
     this.el.nativeElement.remove();
   }
   onCloseClick() {
